@@ -1,41 +1,61 @@
- 📚 Website bán sách (StoreSach)
+📚 StoreSach – Website Bán Sách
+Website thương mại điện tử bán sách, xây dựng với ASP.NET (C#) và SQL Server, có đầy đủ luồng mua hàng cho khách và trang quản trị cho admin.
+🚀 Tính năng
+Người dùng
+- Đăng ký / đăng nhập tài khoản
+- Xem danh sách và chi tiết sách
+- Thêm vào giỏ hàng, đặt hàng
 
- 🚀 Giới thiệu
-Website bán sách với các chức năng:
-- Đăng nhập / đăng ký
-- Xem sản phẩm
-- Giỏ hàng
-- Đặt hàng
-- Quản lý admin
+Quản trị (Admin)
+- Quản lý sách (CRUD: thêm / sửa / xóa / xem)
+- Quản lý danh mục (Categories)
+- Quản lý đơn hàng (Orders)
+- Dashboard tổng quan
 
- 🛠 Công nghệ sử dụng
-- ASP.NET / C#
-- SQL Server
-- Bootstrap
+🛠 Công nghệ sử dụng
 
- ⚙️ Hướng dẫn cài đặt
+| Thành phần | Công nghệ |
+|---|---|
+| Backend | ASP.NET (C#), Web Forms |
+| Cơ sở dữ liệu | SQL Server |
+| Giao diện | Bootstrap |
 
- 1. Clone project
+⚙️ Hướng dẫn cài đặt
+
+1. Clone project
+bash
 git clone https://github.com/GiaVy12/Web-ban-sach.git
 
- 2. Import database
-- Mở SQL Server
-- Tạo database: StoreSach
-- Chạy file: database/StoreSach.sql
 
- 3. Cấu hình kết nối
-- Mở Web.config
-- Sửa connection string theo máy bạn
+2. Tạo cơ sở dữ liệu
+- Mở SQL Server Management Studio
+- Tạo database tên `StoreSach`
+- Chạy file script `database/StoreSach.sql`
 
- 4. Chạy project
-- Mở bằng Visual Studio
-- Nhấn Run
+3. Cấu hình kết nối
+- Mở file `Web.config`
+- Sửa `connection string` theo thông tin SQL Server trên máy bạn
 
- 🔑 Tài khoản test
-- admin / 123456
+4. Chạy project
+- Mở solution bằng Visual Studio
+- Nhấn `Run` (F5)
 
- 📌 Chức năng chính
-- CRUD sản phẩm
-- Giỏ hàng
-- Đặt hàng
-- Quản lý user
+🔑 Tài khoản demo
+
+> Tài khoản dưới đây chỉ dùng để demo trên môi trường local, không dùng cho môi trường thật.
+
+| Vai trò | Tài khoản | Mật khẩu |
+|---|---|---|
+| Admin | admin | 123456 |
+
+📌 Cấu trúc thư mục chính
+
+StoreSach/
+├── Admin/          # Trang quản trị: Books, Categories, Orders, Dashboard
+├── database/        # File script SQL Server
+└── Web.config        # Cấu hình kết nối cơ sở dữ liệu
+
+
+📄 Ghi chú
+
+Dự án được xây dựng với mục đích học tập, thực hành mô hình ASP.NET Web Forms kết hợp SQL Server trong một ứng dụng thương mại điện tử hoàn chỉnh.
